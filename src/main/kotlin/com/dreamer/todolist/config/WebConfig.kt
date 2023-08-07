@@ -11,7 +11,7 @@ class WebConfig : WebMvcConfigurer {
     override fun addCorsMappings(registry: CorsRegistry) {
         registry
                 .addMapping("/**")
-                .allowedOrigins("http://localhost:3004")
+                .allowedOrigins("https://kspringpractice.netlify.app/")
                 .allowedMethods(
                         HttpMethod.GET.name(),
                         HttpMethod.POST.name(),
